@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project is a [hyperkube](TODO)-based end-to-end testing
-framework. Many [Kubernetes](TODO) projects are possible to integration test
-without the use of a fully working cluster. This framework creates a mock
-instance of key pieces of the Kubernetes cluster with minimal system
-dependencies.
+This project is a [hyperkube](https://github.com/kubernetes/kubernetes/tree/master/cluster/images/hyperkube)-based 
+end-to-end testing framework. Many [Kubernetes](http://k8s.io) projects are
+possible to integration test without the use of a fully working cluster. This
+framework creates a mock instance of key pieces of the Kubernetes cluster with
+minimal system dependencies.
 
 # Framework
 
@@ -14,7 +14,7 @@ dependencies.
 
 This framework depends on the following:
 
-* [Docker](TODO) 
+* [Docker](http://docker.io) 
 * A valid `sudo` session
 * Write permissions to `/usr/lib/kublet` on the root file-system. This directory
   will be clobbered during a test run.
@@ -33,9 +33,9 @@ This framework provides the following in a containerized manner:
 
 ## Who should use this framework?
 
-If your project only relies on the API server and Kubelet, then this may be a
-good fit for testing your project. This framework is fully compatible with
-travis-ci which was one of the motivations for its creation.
+If your project only needs the API server and Kubelet, then this may be a good
+fit for testing your project. This framework is fully compatible with travis-ci
+which was one of the motivations for its creation.
 
 # User guide
 
